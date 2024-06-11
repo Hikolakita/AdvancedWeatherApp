@@ -1,0 +1,213 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Bai+Jamjuree&family=Bungee+Spice&family=Comfortaa:wght@300..700&family=Concert+One&family=Dela+Gothic+One&family=Honk&family=Kanit:wght@600&family=Montserrat:wght@200&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:wght@700&family=Permanent+Marker&family=Poppins:wght@200;500&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@500;900&family=Tektur:wght@400;500&family=Tilt+Neon&family=Varela+Round&display=swap');
+
+/* Basic styling for the HTML document */
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #1E1E1E;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Styling for titles */
+.title {
+  background: linear-gradient(to right, #6085ff, #9358ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Archivo Black", Archivo;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 58px;
+  font-weight: bold;
+}
+
+/* Styling for city names */
+.city {
+  font-size: 35px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+/* Styling for weather cards */
+.weather-card {
+  width: 285px;
+  height: 500px;
+  border-radius: 15px;
+  background: linear-gradient(#1f2849, 50%, #2e3a66, #613e7c);
+  opacity: 1;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.weather-text:nth-child(1) {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  margin: 2px;
+  height: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.weather-text:nth-child(2) {
+  font-size: 24px;
+  font-weight: bold;
+  height: 0px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  padding-bottom: 21px;
+}
+
+
+.weather-text:nth-child(4) {
+  font-size: 16px;
+  color: rgb(177, 177, 177);
+  height: 0px;
+  padding-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-text:nth-child(3), .weather-text:nth-child(4) {
+  font-size: 16px;
+  color: rgb(177, 177, 177);
+  height: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-text:nth-child(6) {
+  font-size: 35px;
+  height: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0;
+}
+
+.weather-text:nth-child(7) {
+  font-size: 20px;
+  color: rgb(182, 182, 172);
+  height: 0px;
+  padding-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 16px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 20px;
+  position: absolute;
+  pointer-events: none;
+  padding-bottom: 30px;
+}
+
+/* Styling for input fields */
+input {
+    width: 19%;
+    height: 29px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #24262d, #25242a);
+    color: white;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 2px solid transparent;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Placeholder text styling for input fields */
+  input::placeholder {
+    color: gray;
+  }
+  
+  /* Styling for input fields when focused */
+  input:focus {
+    outline: none;
+    border: 2px solid rgb(115, 142, 199);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, #24262d, #25242a);
+  }
+
+.send-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #4b4b4b;
+  opacity: 0.8;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(131, 114, 155);
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  padding: auto;
+  cursor: pointer;
+  align-items: center;
+  transition: 0.4s;
+  margin-top: 25px;
+}
+
+.send-button:hover {
+  opacity: 1;
+}
+
+.home-text {
+  font-size: 25px;
+  height: 0px;
+  color:  #605288;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+
+.key-stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.key-stats {
+  font-size: 17px;
+  height: 0px;
+  background-color:  #ffffff;
+  width: 110px;
+  opacity: 0.5;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+  margin: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.key-stats:hover {
+  opacity: 0.75;
+}
